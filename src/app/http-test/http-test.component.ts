@@ -16,7 +16,7 @@ export class HttpTestComponent implements OnInit {
     interface Myinterface {
       license: string;
     }
-    this.http.get<Myinterface>( url: 'assets/package.json').subscribe( (data) => {
+    this.http.get<Myinterface>(  'assets/package.json').subscribe(  data => {
       console.log(data);
       this.tulos = data.license;
     });
